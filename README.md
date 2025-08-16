@@ -55,7 +55,14 @@ Click **Test configuration** → send a test email.
 
    * Repo URL: `https://github.com/<your-repo>.git`
    * Branch: `master` (❌ incorrect if repo uses `main`)
+
+![](/jennkins-email-img/wrong-job-1.png)
+
+![](/jennkins-email-img/wrong-job-2.png)
+
 3. Save and run the job → it will **fail** since the branch is wrong.
+
+![](/jennkins-email-img/build-fail.png)
 
 ---
 
@@ -71,12 +78,6 @@ Click **Test configuration** → send a test email.
 
 Save the job.
 
-![](/jennkins-email-img/wrong-job-1.png)
-
-![](/jennkins-email-img/wrong-job-2.png)
-
-4. Assigning Reciever-side-email
-
 ![](/jennkins-email-img/reciever-email.png)
 
 ---
@@ -86,10 +87,6 @@ Save the job.
 1. Run the job with the wrong branch (`master` instead of `main`)
 2. The job fails
 3. Jenkins sends an email to `email-b@gmail.com` with failure details
-
-![](/jennkins-email-img/build-fail.png)
-
-
 
 ---
 
