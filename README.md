@@ -20,6 +20,8 @@ This guide explains how to configure Jenkins to send **email alerts** when a bui
 3. Under **App passwords**, create a new password for **Mail**
 4. Copy the 16-character generated password (e.g., `abcd efgh ijkl mnop`)
 
+![](/jennkins-email-img/app-passwd-generator.png)
+
 This will be used in Jenkins instead of your Gmail password.
 
 ---
@@ -35,10 +37,14 @@ This will be used in Jenkins instead of your Gmail password.
 
      * Username: `email-a@gmail.com`
      * Password: *App password generated above*
-   * Default Recipients: `email-b@gmail.com`
-   * Reply-To Address: `email-a@gmail.com`
+     
+   ![](/jennkins-email-img/sys-email-config-1.png)
 
 Click **Test configuration** → send a test email.
+
+![](/jennkins-email-img/test-email.png)
+
+![](/jennkins-email-img/test-email-1.png)
 
 ---
 
@@ -65,6 +71,14 @@ Click **Test configuration** → send a test email.
 
 Save the job.
 
+![](/jennkins-email-img/wrong-job-1.png)
+
+![](/jennkins-email-img/wrong-job-2.png)
+
+4. Assigning Reciever-side-email
+
+![](/jennkins-email-img/reciever-email.png)
+
 ---
 
 ## Test the Setup
@@ -73,6 +87,12 @@ Save the job.
 2. The job fails
 3. Jenkins sends an email to `email-b@gmail.com` with failure details
 
+![](/jennkins-email-img/build-fail.png)
+
+
+
 ---
 
 Now Jenkins will notify you via email whenever a build fails!
+
+![](/jennkins-email-img/final-output.png)
